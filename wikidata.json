@@ -1,0 +1,25 @@
+[
+  {
+    "item": {
+      "value": "Q333582",
+      "label": "Manny Shinwell"
+    },
+    "replaces": {
+      "value": "Q4886592",
+      "label": "Ben Turner"
+    },
+    "replacedBy": {
+      "value": "Q6076320",
+      "label": "Isaac Foot"
+    },
+    "start": {
+      "value": "1930-06-05T00:00:00Z",
+      "precision": "11"
+    },
+    "end": {
+      "value": "1931-09-03T00:00:00Z",
+      "precision": "11"
+    },
+    "statement": "Q333582$97F4173B-1370-4C60-AA98-EB558CD5CE46"
+  }
+]
