@@ -40,13 +40,13 @@ class HolderItem < WikipediaTableRow
   end
 
   field :start_date do
-    Date.parse(start_text)
+    PartialDate.new(start_text).to_s
   end
 
   field :end_date do
     return if end_text == 'Incumbent'
 
-    Date.parse(end_text)
+    PartialDate.new(end_text).to_s
   end
 
   field :replaces do
@@ -62,11 +62,11 @@ class HolderItem < WikipediaTableRow
   private
 
   def start_text
-    start_date_cell.text.tidy
+    start_date_cell.children.map(&:text).map(&:tidy).join(' ')
   end
 
   def end_text
-    end_date_cell.text.tidy
+    end_date_cell.children.map(&:text).map(&:tidy).join(' ')
   end
 
   def name_cell
